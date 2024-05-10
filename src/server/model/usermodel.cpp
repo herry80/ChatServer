@@ -40,7 +40,7 @@ User UserModel::query(int id)
                 user.setId(atoi(row[0]));
                 user.setName(row[1]);
                 user.setPassword(row[2]);
-                user.setState(row[4]);
+                user.setState(row[3]);
                 mysql_free_result(res);//释放资源
                 return user;
             }
